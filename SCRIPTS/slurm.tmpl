@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -J __MRO_JOB_NAME__
+#SBATCH -N 1
+#SBATCH -c 1
+#SBACTH --partition=fn_medium
+#SBATCH --mem=1GB
+#SBATCH -o __MRO_STDOUT__
+#SBATCH -e __MRO_STDERR__
+#SBATCH -t 0-48:00:00 
+#SBATCH --qos="normal"
+
+ __MRO_CMD__
